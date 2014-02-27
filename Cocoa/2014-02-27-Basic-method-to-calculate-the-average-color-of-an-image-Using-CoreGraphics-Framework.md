@@ -1,18 +1,17 @@
-# Basic method to calculate the average color of an image - Using CoreGraphics Framework
+Basic method to calculate the average color of an image - Using CoreGraphics Framework
+=====
 
+Details
 ------
+Calculate, using `CGBitmapContextCreate()` function, out the average and store the `RGBA` in a single row of array.
 
-Related solutions and articles
-
-* [http://stackoverflow.com/a/13695592/1583560](http://stackoverflow.com/a/13695592/1583560)
-* [http://www.bobbygeorgescu.com/2011/08/finding-average-color-of-uiimage/](http://www.bobbygeorgescu.com/2011/08/finding-average-color-of-uiimage/)
-
+Code
 ------
 ```
 -(UIColor*)averageColor {
-	CGColorSpaceRef colorSpace =CGColorSpaceCreateDeviceRGB();
+	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
 	unsignedchar rgba[4];
-	CGContextRef context =CGBitmapContextCreate(rgba,1,1,8,4, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
+	CGContextRef context = CGBitmapContextCreate(rgba,1,1,8,4, colorSpace, kCGImageAlphaPremultipliedLast | kCGBitmapByteOrder32Big);
 	
 	CGContextDrawImage(context,CGRectMake(0,0,1,1), self.CGImage);
 	CGColorSpaceRelease(colorSpace);
@@ -20,7 +19,7 @@ Related solutions and articles
 	
 	if(rgba[3]]]>0)
 	{
-		CGFloat alpha =((CGFloat)rgba[3])/255.0;
+		CGFloat alpha      = ((CGFloat)rgba[3])/255.0;
 		CGFloat multiplier = alpha/255.0;
 		return [UIColor colorWithRed:((CGFloat)rgba[0])*multiplier
 		                       green:((CGFloat)rgba[1])*multiplier
@@ -37,3 +36,9 @@ Related solutions and articles
 	}
 }
 ```
+
+References
+------
+
+* [http://stackoverflow.com/a/13695592/1583560](http://stackoverflow.com/a/13695592/1583560)
+* [http://www.bobbygeorgescu.com/2011/08/finding-average-color-of-uiimage/](http://www.bobbygeorgescu.com/2011/08/finding-average-color-of-uiimage/)
