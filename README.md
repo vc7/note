@@ -1,6 +1,13 @@
 Note
 ======
 
+Android
+------
+
+| Date | Title |
+|:----:|:------|
+|2014-03-03| Setup Android's Development Environment |
+
 Cocoa
 ------
 
@@ -16,10 +23,13 @@ Git
 |:----:|:------|
 |2014-02-27| Rebase unexpected commit |
 
+Java
+------
 
-Android
+Server
 ------
 
 | Date | Title |
 |:----:|:------|
-|2014-03-03| Setup Android's Development Environment |
+|2014-03-03| Install RVM - The RoR Environment |
+|2014-03-03| Server Load Balancing Using Ubuntu With HAProxy |
