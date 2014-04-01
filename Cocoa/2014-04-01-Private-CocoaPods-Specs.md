@@ -44,7 +44,7 @@ cd 0.0.1
 pod spec create PrivateLibrary
 ```
 
-After the last command, pod will generate a `.podspec` file for you, you will need to edit the content to fit you library settings
+After the last command, pod will generate a `.podspec` file for you, you will need to [edit the spec](http://guides.cocoapods.org/making/specs-and-specs-repo.html) to fit you library settings
 
 ### Tag Your Library
 
@@ -85,6 +85,8 @@ That's it. Have fun! All of above should be worked fine.
 
 ### References
 
+- [Private Pods - CocoaPods](http://guides.cocoapods.org/making/private-cocoapods.html)
+- [Specs and the Specs Repo - CocoaPods](http://guides.cocoapods.org/making/specs-and-specs-repo.html)
 - [Private Cocoapods - Jeffrey Jackson](https://coderwall.com/p/7ucsva)
 
 
