@@ -79,6 +79,21 @@ pod repo update 'Private-Cocoapods'
 pod repo remove 'Private-Cocoapods'
 ```
 
+### Checking and Varify
+
+Checking the installation is successful and ready to rock:
+
+```sh
+cd ~/.cocoapods/repos/Private-Cocoapods
+pod repo lint .
+```
+
+Make sure your souces setting is good
+
+```sh
+pod push Private-Cocoapods PrivateLibrary.podspec 
+```
+
 ### Conclusion
 
 That's it. Have fun! All of above should be worked fine.
@@ -88,5 +103,3 @@ That's it. Have fun! All of above should be worked fine.
 - [Private Pods - CocoaPods](http://guides.cocoapods.org/making/private-cocoapods.html)
 - [Specs and the Specs Repo - CocoaPods](http://guides.cocoapods.org/making/specs-and-specs-repo.html)
 - [Private Cocoapods - Jeffrey Jackson](https://coderwall.com/p/7ucsva)
-
-
