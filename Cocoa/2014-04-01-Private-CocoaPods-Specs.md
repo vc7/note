@@ -11,6 +11,7 @@
 mkdir ~/Documents/Private-Cocoapods
 cd ~/Documents/Private-Cocoapods
 touch README.md
+git init
 git add README.md
 git commit -m "Initial Commit"
 git remote add origin https://github.com/username/Private-Cocoapods.git
