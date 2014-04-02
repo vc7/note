@@ -36,3 +36,5 @@ Server
 |2014-03-06| Configuring Remote Login for Ubuntu |
 |2014-03-03| Install RVM - The RoR Environment |
 |2014-03-03| Server Load Balancing Using Ubuntu With HAProxy |
+
+![](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg)
